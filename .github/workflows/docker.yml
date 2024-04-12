@@ -24,13 +24,13 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build PHP
-      run: docker buildx build -f Dockerfile.php -t ghcr.io/${{ github.actor }}/cro-php-example:php .
+      run: docker buildx build -f Dockerfile.php -t ghcr.io/sika-training-examples/cro-php-example:php .
 
     - name: Build Nginx
-      run: docker buildx build -f Dockerfile.nginx -t ghcr.io/${{ github.actor }}/cro-php-example:nginx .
+      run: docker buildx build -f Dockerfile.nginx -t ghcr.io/sika-training-examples/cro-php-example:nginx .
 
     - name: Push PHP
-      run: docker push ghcr.io/${{ github.actor }}/cro-php-example:php
+      run: docker push ghcr.io/sika-training-examples/cro-php-example:php
 
     - name: Push Nginx
-      run: docker push ghcr.io/${{ github.actor }}/cro-php-example:nginx
+      run: docker push ghcr.io/sika-training-examples/cro-php-example:nginx
