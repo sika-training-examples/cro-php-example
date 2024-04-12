@@ -1,0 +1,7 @@
+# Required
+host:
+
+# Optional
+replicas: 2
+phpImage: ghcr.io/sika-training-examples/cro-php-example:php
+nginxImage: ghcr.io/sika-training-examples/cro-php-example:nginx

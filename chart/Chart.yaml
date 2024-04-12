@@ -1,0 +1,5 @@
+apiVersion: v2
+name: cro-php
+description: An example PHP app for Rozhlas
+type: application
+version: 0.0.0
